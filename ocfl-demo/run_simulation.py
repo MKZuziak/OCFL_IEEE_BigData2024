@@ -38,22 +38,22 @@ def simulation_run(
         data = pickle.load(file)
     orchestrator_data = data[0]
     nodes_data = data[1]
-    LOCAL_EPOCHS = 1 # 3
+    LOCAL_EPOCHS = 3
     
     # Switches net architecture
     if dataset_name == 'FMNIST':
         net_architecture = FMNIST_Expanded_CNN()
-        ITERATIONS = 1 #50
+        ITERATIONS = 50
         LOADER_BATCH_SIZE = 32
         BATCH_JOB = False
     elif dataset_name == 'MNIST':
         net_architecture = FMNIST_Expanded_CNN()
-        ITERATIONS = 1 #50
+        ITERATIONS = 50
         LOADER_BATCH_SIZE = 32
         BATCH_JOB = False
     elif dataset_name == 'CIFAR10':
         net_architecture = ResNet34()
-        ITERATIONS = 1 #80
+        ITERATIONS = 80
         LOADER_BATCH_SIZE = 64
         BATCH_JOB = True
     else:
