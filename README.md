@@ -40,3 +40,16 @@ python baseline_experiments.py
 
 This should generate all the 336 baseline experiments included in the original paper. Please note that due to the number of experiments included, we provide all the numerical results in a separate directory titled ```numerical_results```. However, execution of this code should allow for the re-creation of all the experiments if needed.
 Please note that due to an inherent randomness of the process, some numerical results may be slightly different upon execution of the code. Although we have fixed seeds in many places, some elements are not entirely deterministic - e.g., the [PyTorch library may offer varied reproducibility.](https://pytorch.org/docs/stable/notes/randomness.html).
+
+## Citation
+
+```bibtex
+@inproceedings{zuziak2024oneshot,
+      title={One-Shot Clustering for Federated Learning},
+      author={Zuziak, Maciej Krzysztof and Pellungrini, Roberto and Rinzivillo, Salvatore},
+      booktitle={2024 IEEE International Conference on Big Data (BigData)},
+      pages={8108--8117},
+      year={2024},
+      organization={IEEE},
+      doi={10.1109/BigData62323.2024.10825763}
+}
